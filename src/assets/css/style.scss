@@ -1,0 +1,21 @@
+.row {
+    margin-bottom: 1rem;
+}
+
+.row .row {
+    margin-top: 1rem;
+}
+
+.col,
+[class*="col-"] {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: rgba(255, 204, 0, .15);
+    border: 1px solid rgba(255, 204, 0, .2);
+}
+
+.page-header {
+    padding-bottom: calc(1rem - 1px);
+    margin: 4rem 0 2rem;
+    border-bottom: 1px solid #eee;
+}

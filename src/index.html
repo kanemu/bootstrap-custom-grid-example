@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Bootstrapのグリッドをカスタマイズする</title>
 </head>
+
 <body>
-    
+    <div class="container">
+
+        <div class="page-header">
+            <h1>Bootstrapのグリッドをカスタマイズする</h1>
+            <p class="lead">Bootstrapの<code>mixins/_grid.scss</code>をカスタマイズして、<code>column-gap</code>を使用させるサンプルです。</p>
+        </div>
+
+        <p>通常のBootstrapでは、colに色を入れた場合、枠の両端はテキストの両端に揃いません。<br>
+            確認のためダミーテキストを挿入します。</p>
+        <p>それは十月とやかくその衰弱者というののところをさないだ。
+            できるだけ当時が危く屋はもちろんある相違たなかもが落ちつけとくれでには反抗あっなたが、ちょっとにはなりますましなでしょ。
+            貧民へいうだ事ももちろん十月に実にますななかっ。
+            毫も大森君に指図徳義心こう存在からつかですがたその人よそか講演にに従ってお批評でないですでから、
+            その事実はあれか他人自己をさて、久原さんののに代りの我々でもしご学習と書いてこれ味にご講義に云っようにもちろんお自失にもたたでので、
+            余計たとい意見にしございていですのがさないた。</p>
+
+        <h3>3列に等分割</h3>
+        <div class="row">
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+            <div class="col">.col</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+
+        <h3>3列に非等分割</h3>
+        <div class="row">
+            <div class="col-md-3">.col-md-3</div>
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-3">.col-md-3</div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">.col-md-2</div>
+            <div class="col-md-5">.col-md-6</div>
+            <div class="col-md-5">.col-md-5</div>
+        </div>
+
+        <h3>2列</h3>
+        <div class="row">
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+
+        <h3>列をネストした場合</h3>
+        <div class="row">
+            <div class="col-md-8">
+                .col-md-8
+                <div class="row">
+                    <div class="col-md-6">.col-md-6</div>
+                    <div class="col-md-6">.col-md-6</div>
+                </div>
+            </div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+
+        <h3>sm, md, lgを混在させる</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-8">.col-sm-12 .col-md-8</div>
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">.col-sm-6</div>
+            <div class="col-sm-6">.col-sm-6</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-8">.col-sm-6 .col-lg-8</div>
+            <div class="col-sm-6 col-lg-4">.col-sm-6 .col-lg-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+            <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+        </div>
+
+    </div> <!-- /container -->
 </body>
+
 </html>
