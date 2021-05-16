@@ -12,6 +12,9 @@
 @import "mixins";
 @import "utilities";
 
+// custom mixin
+@import "mixins/grid";
+
 // Layout & components
 @import "root";
 @import "reboot";
