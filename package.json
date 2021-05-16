@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-gulp-starter",
+  "name": "bootstrap-custom-grid-example",
   "version": "0.0.1",
-  "description": "Demo project for building a Bootstrap powered site via gulp.",
+  "description": "Sample to customize Bootstrap mixin/_grid.scss",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
