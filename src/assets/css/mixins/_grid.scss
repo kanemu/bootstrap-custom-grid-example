@@ -1,15 +1,13 @@
 /// Grid system
 //
 // Generate semantic grid columns with these mixins.
-
 @mixin make-row($gutter: $grid-gutter-width) {
   --#{$variable-prefix}gutter-x: #{$gutter};
   --#{$variable-prefix}gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(var(--#{$variable-prefix}gutter-y) * -1); // stylelint-disable-line function-disallowed-list
-  margin-right: calc(var(--#{$variable-prefix}gutter-x) / -2); // stylelint-disable-line function-disallowed-list
-  margin-left: calc(var(--#{$variable-prefix}gutter-x) / -2); // stylelint-disable-line function-disallowed-list
+  column-gap: var(--#{$variable-prefix}gutter-x);
+  row-gap: var(--#{$variable-prefix}gutter-y);
 }
 
 @mixin make-col-ready($gutter: $grid-gutter-width) {
@@ -21,15 +19,12 @@
   flex-shrink: 0;
   width: 100%;
   max-width: 100%; // Prevent `.col-auto`, `.col` (& responsive variants) from breaking out the grid
-  padding-right: calc(var(--#{$variable-prefix}gutter-x) / 2); // stylelint-disable-line function-disallowed-list
-  padding-left: calc(var(--#{$variable-prefix}gutter-x) / 2); // stylelint-disable-line function-disallowed-list
-  margin-top: var(--#{$variable-prefix}gutter-y);
 }
 
 @mixin make-col($size: false, $columns: $grid-columns) {
   @if $size {
     flex: 0 0 auto;
-    width: percentage($size / $columns);
+    width: calc((100% + var(--#{$variable-prefix}gutter-x)) * #{$size / $columns} - var(--#{$variable-prefix}gutter-x));
   } @else {
     flex: 1 1 0;
     max-width: 100%;
