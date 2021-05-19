@@ -793,12 +793,12 @@ progress {
 
 .g-0,
 .gx-0 {
-  --bs-gutter-x: 0;
+  --bs-gutter-x: 0rem;
 }
 
 .g-0,
 .gy-0 {
-  --bs-gutter-y: 0;
+  --bs-gutter-y: 0rem;
 }
 
 .g-1,
@@ -1006,12 +1006,12 @@ progress {
 
   .g-sm-0,
 .gx-sm-0 {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0rem;
   }
 
   .g-sm-0,
 .gy-sm-0 {
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 0rem;
   }
 
   .g-sm-1,
@@ -1219,12 +1219,12 @@ progress {
 
   .g-md-0,
 .gx-md-0 {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0rem;
   }
 
   .g-md-0,
 .gy-md-0 {
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 0rem;
   }
 
   .g-md-1,
@@ -1432,12 +1432,12 @@ progress {
 
   .g-lg-0,
 .gx-lg-0 {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0rem;
   }
 
   .g-lg-0,
 .gy-lg-0 {
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 0rem;
   }
 
   .g-lg-1,
@@ -1645,12 +1645,12 @@ progress {
 
   .g-xl-0,
 .gx-xl-0 {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0rem;
   }
 
   .g-xl-0,
 .gy-xl-0 {
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 0rem;
   }
 
   .g-xl-1,
@@ -1858,12 +1858,12 @@ progress {
 
   .g-xxl-0,
 .gx-xxl-0 {
-    --bs-gutter-x: 0;
+    --bs-gutter-x: 0rem;
   }
 
   .g-xxl-0,
 .gy-xxl-0 {
-    --bs-gutter-y: 0;
+    --bs-gutter-y: 0rem;
   }
 
   .g-xxl-1,
