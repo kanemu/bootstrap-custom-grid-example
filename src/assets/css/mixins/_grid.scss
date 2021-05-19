@@ -24,7 +24,8 @@
 @mixin make-col($size: false, $columns: $grid-columns) {
   @if $size {
     flex: 0 0 auto;
-    width: calc((100% + var(--#{$variable-prefix}gutter-x)) * #{$size / $columns} - var(--#{$variable-prefix}gutter-x));
+    width: if($size == $columns, 100%,
+      calc((100% + var(--#{$variable-prefix}gutter-x)) * #{$size / $columns} - var(--#{$variable-prefix}gutter-x)));
   } @else {
     flex: 1 1 0;
     max-width: 100%;
